@@ -40,6 +40,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 // SCRIPT PARALLAX
+// pour utiser le script parallax on ajoute data-parallax puis on met la vitesse qu'on souhaite
+// exemple: data-parallax='0.1'
 // calcul la position de l'élément par rapport au haut de la page
 function offsetTop(element, acc = 0){
     if(!element.offsetParent){
@@ -53,6 +55,8 @@ class Parallax {
     constructor(element) {
         this.element = element;
         this.speed = parseFloat(element.dataset.parallax);
+        // on applique dans tous les balises qui ont le dataset parallax
+        // la vitesse lors du scroll
         this.onScroll = this.onScroll.bind(this);
         this.onIntersection = this.onIntersection.bind(this);
         this.elementY = offsetTop(this.element) + this.element.offsetHeight / 2;
