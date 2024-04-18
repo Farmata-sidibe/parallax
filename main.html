@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parallax with Fixed Image and Scrolling Text</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <script src="script.js" defer></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+</head>
+<body>
+   <!-- header -->
+   <header>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="./images/Bitmap.png" alt="">
+        </div>
+        <ul class="links">
+            <li><a href="#">LE COTÉ LUMINEUX</a></li>
+            <li><a href="#">LE COTÉ OBSCUR</a></li>
+            <li><a href="#">L'EMPIRE</a></li>
+            <li><a href="#">LES DROÏDES</a></li>
+            <li><a href="#">LES EWOKS</a></li>
+            <li><a href="#">JABBA LE HUIT</a></li>
+        </ul>
+
+        <div class="burger-menu-button">
+           <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    <nav class="burger-menu">
+        <ul class="links">
+            <li><a href="#">LE COTÉ LUMINEUX</a></li>
+            <li><a href="#">LE COTÉ OBSCUR</a></li>
+            <li><a href="#">L'EMPIRE</a></li>
+            <li><a href="#">LES DROÏDES</a></li>
+            <li><a href="#">LES EWOKS</a></li>
+            <li><a href="#">JABBA LE HUIT</a></li>
+        </ul>
+        
+    </nav>
+</header>
+    <!-- section 1 -->
+    <div class="parallax-section1" >
+        <div id="background"></div>
+        <div id="midground"></div>
+        <div id="foreground"></div>
+
+        <div class="container-image">
+            <div class="logo">
+                <img src="/images/Bitmap.png" alt="Logo">
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Section 2 -->
+    <div class="parallax-section2">
+        <div class="grid">
+            <div class="content">
+                <p id="text">Star Wars, The Force Awakens <br> <br>
+
+                    Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression. Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ». 
+                    
+                    Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie. Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie. <br> <br>
+                    
+                    Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression. Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ». 
+                    
+                    Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie. Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie. <br> <br>
+                    
+                    Plus de 30 ans après la bataille d'Endor, la galaxie n'en a pas fini avec la tyrannie et l’oppression. Les membres de l'Alliance rebelle, devenus la « Résistance », combattent les vestiges de l'Empire réunis sous la bannière du « Premier Ordre ». 
+                    
+                    Un mystérieux guerrier, Kylo Ren, semble vouer un culte à Dark Vador et pourchasse les ennemis du Premier Ordre à travers la galaxie. Au même moment, une jeune femme nommée Rey, pilleuse d'épaves sur la planète désertique Jakku, va faire la rencontre de Finn, un Stormtrooper en fuite, une rencontre qui bouleversera sa vie. <br> <br>
+                    
+                </p>
+                    
+            </div>
+            <div class="image"></div>
+
+        </div>
+    </div>
+
+    <!-- section 3 parallax image simple -->
+    <section class="bg-[url('/images/kyloren-2x.jpg')] bg-fixed bg-cover bg-no-repeat h-[90vh]">
+    </section>
+
+    <!-- section 4 -->
+
+    <div class="flex flex-col gap-[40px] px-[100px] py-[60px]">
+        <h2 class="text-center text-[35px] font-medium">A long time ago, in a galaxy far, far away…</h2>
+
+        <div class="content-grid">
+            <img src="/images/r2d2_c3p0-2x.jpg" data-parallax="0.2" class="w-[300px] h-[250px] object-cover" alt="">
+            <div>
+                <p>
+                    La Guerre des étoiles (titre original Star Wars, soit littéralement Guerres Stellaires ) est une épopée cinématographique de science-fiction créée par George Lucas, considérée comme un élément phare du space opera. Prévue à la base pour être une suite de trois trilogies (triptyque), Lucas fut contraint, par manque de moyens techniques, de commencer par la seconde trilogie (l'Épisode IV - Un nouvel espoir) en 1977. La série connut un succès phénoménal partout dans le monde et engendra une très importante communauté de fans. 
+                   <br> Sans prétendre expliquer le succès du premier film (s'il y avait une recette, cela se saurait), on peut, toutefois, noter que, malgré le manque de moyens (le budget était relativement modeste, les acteurs presque inconnus) :	
+                    
+                </p>
+            </div>
+           
+        </div>
+
+        <p>
+            - Il fait appel à des références connues et appréciées des jeunes de l'époque : films de cape et d'épée, westerns, péplums, contes de fées et même le Seigneur des Anneaux de J.R.R. Tolkien ; cette œuvre n'apparaît pas comme de la science-fiction au sens strict mais plutôt comme du space fantasy. <br>
+            - Les effets spéciaux, supervisés par Ken Ralston, étaient réellement novateurs, avec notamment la participation de John Dykstra (qui a également participé au premier film de Star Trek), qui avait développé une nouvelle manière d'animer les maquettes des vaisseaux en coordonnant leurs mouvements par ordinateur (Dykstraflex). <br>
+            - Le film a développé un univers cohérent, avec, comme préoccupation constante, autant la création d'une ambiance que l'action proprement dite.
+            - La musique, composée par John Williams, introduit des thèmes récurrents et des leitmotivs (procédé classique mais renforçant la cohérence).
+        </p>
+    </div>
+
+<!-- section 5 -->
+
+    <section class=" bg-[url('./images/stormtroopers-2x.jpg')] bg-fixed bg-cover bg-no-repeat h-[70vh]">
+    </section>
+
+    <footer class="bg-[url('./images/darthvader_2x.jpg')] bg-fixed bg-cover bg-no-repeat flex flex-col justify-around gap-[40px] py-[60px]">
+        <h5 class="text-[#9B9B9B] text-[20px] text-center">TM Lucasfilm Ltd. All Rights Reserved.</h5>
+
+        <div class="footer-text">
+
+            <div class="flex flex-col gap-[20px]">
+                <a href="" class="text-[#9B9B9B]">Terms of Use</a>
+                <a href="" class="text-[#9B9B9B]">Legal Notices</a>
+                <a href="" class="text-[#9B9B9B]">Privacy Policy</a>
+    
+            </div>
+            <div class="flex flex-col gap-[20px]">
+                <a href="" class="text-[#9B9B9B]">Terms of Use</a>
+                <a href="" class="text-[#9B9B9B]">Legal Notices</a>
+                <a href="" class="text-[#9B9B9B]">Privacy Policy</a>
+    
+            </div>
+    
+            <div class="flex flex-col gap-[20px] items-center">
+                <p class="text-[#9B9B9B]">FOLLOW STAR WARS</p>
+                <div class="grid grid-cols-3 justify-items-center gap-[30px] ">
+                    <img src="/svg/facebook.svg" width="40" height="40" alt="">
+                    <img src="/svg/twitter.svg" width="40" height="40" alt="">
+                    <img src="/svg/insta.svg" width="40" height="40" alt="">
+    
+                </div>
+            </div>
+        </div>
+        
+
+    </footer>
+</body>
+</html>

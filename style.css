@@ -1,0 +1,232 @@
+:root {
+    --navbar-bg-color: #000000b5;
+    --navbar-text-color: hsl(0, 0%, 85%);
+    --navbar-text-color-focus: white;
+    --navbar-bg-contrast: hsl(0, 0%, 25%);
+  }
+body, html {
+    margin: 0;
+    padding: 0;
+}
+li{
+  list-style: none;
+}
+li a{
+  text-decoration: none;
+  color: #fff;
+  font-size: 1rem;
+}
+
+.nav-logo img{
+  width: 100px;
+}
+
+header{
+  position: fixed;
+  width: 100%;
+  padding: 0 2rem;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1000;
+}
+
+.navbar{
+  width: 100%;
+  max-width: 1200px;
+  height: 60px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .links {
+  display: flex;
+  gap: 2rem;
+}
+
+.navbar .burger-menu-button{
+  color: #fff;
+  cursor: pointer;
+  display: none;
+}
+
+/* BURGER MENU */
+.burger-menu{
+  display: none;
+  height: 0;
+  position: absolute;
+  right: 2rem;
+  top: 60px;
+  width: 200px;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(15px);
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.burger-menu.open{
+  height: 250px;
+}
+.burger-menu li{
+  padding: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* end navbar */
+
+/* section 1 parallax du logo */
+.parallax-section1 {
+    height: 100vh;
+}
+@-webkit-keyframes STAR-MOVE {
+    from {
+      left: 0;
+      top: 0;
+    }
+    to { 
+      left: -10000px;
+      top: -2000px;
+    }
+  }
+  
+  #background {
+    background: url("/images/header-bg-2x.png") repeat 5% 5%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 100;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 350s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  #midground {
+    background: url("/images/midground.png") repeat 20% 20%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 200;
+    
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 300s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  
+  #foreground {
+    background: url("/images/foreground.png") repeat 35% 35%;
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 300;
+    
+    -webkit-animation-name: STAR-MOVE;
+    -webkit-animation-duration: 400s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+  }
+  .container-image {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+  .logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s ease;
+    z-index: 100;
+}
+/* fin de la section 1 */
+
+/* section 2 fixer l'image par rapport au viewport lors du scroll dans la section */
+.parallax-section2 {
+    height: auto; /* Hauteur de la section */
+    overflow: hidden;
+    padding: 60px 100px 150px 100px;
+    /* margin-bottom: 60px; */
+}
+
+.parallax-section2 .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Une colonne pour l'image et le contenu */
+    grid-template-rows: auto; /* Hauteur automatique pour s'adapter au contenu */
+    height: 100%;
+    justify-items: end;
+}
+
+.parallax-section2 .grid .image {
+    background-image: url('/images/ads.jpg'); /* Chemin de l'image */
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    top: 0;
+    width: 300px;
+    
+    height: 100%; /* Hauteur maximale de l'image */
+}
+
+
+/* Fin de la section 2 */
+
+/* section 4 */
+
+.content-grid{
+    display: grid;
+    grid-template-columns: 1fr 2.1fr 0fr;
+}
+.footer-text{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+/* responsive */
+
+@media screen and (max-width:1024px) {
+    /* menu burger */
+    .navbar .links{
+      display: none;
+  }
+
+  .navbar .burger-menu-button{
+      display: block;
+  }
+  
+
+  .burger-menu{
+      display: block;
+  }
+    /* end menu burger */
+    .parallax-section2 .grid {
+        grid-template-columns: 1fr;
+       
+    }
+    .parallax-section2 .grid .image {
+        display: none;
+    }
+
+    .content-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+  
+}
+
+@media screen and (max-width:580px) {
+  .burger-menu{
+    left: 2rem;
+    width: unset;
+}
+    .footer-text{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        gap: 40px;
+    }
+
+}
