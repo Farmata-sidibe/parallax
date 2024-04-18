@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 :root {
     --navbar-bg-color: #000000b5;
     --navbar-text-color: hsl(0, 0%, 85%);

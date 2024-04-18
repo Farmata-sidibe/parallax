@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
-
+// SCRIPT PARALLAX
 // calcul la position de l'élément par rapport au haut de la page
 function offsetTop(element, acc = 0){
     if(!element.offsetParent){
@@ -59,7 +59,7 @@ class Parallax {
         const observer = new IntersectionObserver(this.onIntersection);
         observer.observe(element);
         this.onScroll();
-        // document.addEventListener('scroll', this.onScroll);
+        
     }
 
     onIntersection(entries){
