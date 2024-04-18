@@ -94,7 +94,7 @@ header{
   }
   
   #background {
-    background: url("/images/header-bg-2x.png") repeat 5% 5%;
+    background: url("./images/header-bg-2x.png") repeat 5% 5%;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 100;
@@ -108,7 +108,7 @@ header{
   }
   
   #midground {
-    background: url("/images/midground.png") repeat 20% 20%;
+    background: url("./images/midground.png") repeat 20% 20%;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 200;
@@ -120,7 +120,7 @@ header{
   }
   
   #foreground {
-    background: url("/images/foreground.png") repeat 35% 35%;
+    background: url("./images/foreground.png") repeat 35% 35%;
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     z-index: 300;
@@ -162,7 +162,7 @@ header{
 }
 
 .parallax-section2 .grid .image {
-    background-image: url('/images/ads.jpg'); /* Chemin de l'image */
+    background-image: url('./images/ads.jpg'); /* Chemin de l'image */
     background-size: cover;
     background-position: center;
     position: sticky;
